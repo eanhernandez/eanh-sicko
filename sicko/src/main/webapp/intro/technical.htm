@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<TITLE>Sicko - home</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#999933" VLINK="#999933" ALINK="#000000">
+<BR>
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=100%>
+<TR>
+	<TD WIDTH=20>
+		<BR>
+	</TD>
+	<TD WIDTH=280>
+		<IMG SRC="../images/h_about.gif" WIDTH=249 HEIGHT=80 ALT="about this site" HSPACE=30>
+	</TD>
+	<TD VALIGN=BOTTOM>
+		<A HREF="about.htm"><IMG SRC="../images/b_btgen.gif" WIDTH=78 HEIGHT=18 ALT="in general" BORDER=0></A>
+		<BR>
+		<A HREF="credits.htm"><IMG SRC="../images/b_btcred.gif" WIDTH=78 HEIGHT=14 ALT="credits" BORDER=0></A>
+		<BR>
+		&nbsp;<IMG SRC="../images/b_gttech.gif" WIDTH=96 HEIGHT=15 ALT="technical stuff" BORDER=0>
+	</TD>
+</TR>
+
+<TR><TD COLSPAN=3 HEIGHT=20><BR></TD></TR>
+
+<TR>
+	<TD WIDTH=20>
+		<BR>
+	</TD>
+	<TD COLSPAN=2>
+	<FONT FACE="Arial" SIZE=2>
+	<IMG SRC="../images/b_technical.gif" WIDTH=147 HEIGHT=22 ALT="technical stuff"><BR><BR>
+	This site is hosted on a server running Microsoft NT Server 4.0 with Internet Information Server 3.0 with Active Server Pages
+	extensions. It also uses Microsoft SQL Server 6.5 for the database backend. We use Active Server Pages to generate dynamic
+	content which is stored in the SQL database.
+	<P>
+	So far three sections of the site have been converted to ASP...the Upcoming Shows, Places We Like and the picture picker found 
+	under "Rock and Roll Tour 1996" in the pictures section. Accompanying each section is an administrator's tool which provides
+	web-based editing tools to edit the content of the site. The administrator's site is unavailable to the front-end user and is 
+	password protected, so don't waste your time looking for it. 
+	<P>
+	<IMG SRC="../images/b_works.gif" WIDTH=98 HEIGHT=17 ALT="how it works"><BR>
+	As an example, we'll use adding an upcoming show to illustrate how it all works. In the admin tool, there's a form which 
+	allows us to enter new shows. We enter a publishing date (when the show listing will publish to the site) and a show date, along with all the other
+	information you see on the page...location, venue, other bands, etc. When the listing is submitted, it's written into the shows
+	table in the SQL database. The next time the Upcoming Shows page is requested by a user, the page pulls all the shows with a publishing
+	date earlier than or equal to today and with show dates later than or equal to today. It then pulls all the associated information
+	and generates the HTML which is then sent to the viewer. And, voila, the user sees the new listing. This way, we avoid having to edit
+	the HTML directly and our jobs are made a whole lot easier. The other tools work in a similar way. Eventually, we'd like to have the whole
+	site converted to ASP and when we do, you can read about it here.
+	</FONT>
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>
